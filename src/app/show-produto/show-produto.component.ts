@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProdutoService } from 'src/app/services/produto/produto.service';
+import { Produto } from 'src/app/services/produto/produto';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
@@ -11,7 +12,7 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 })
 export class ShowProdutoComponent implements OnInit {
 
-  produtos: Array<object>;
+  produtos: Array<Produto>;
   selectedProduto;
   precoFinal;
   public produtoId;
@@ -28,11 +29,11 @@ export class ShowProdutoComponent implements OnInit {
     this.produtoId = id;
 
     this.produtoService.get().subscribe(
-      (items: Array<object>) =>
+      (items: Array<Produto>) =>
       {
         items.forEach
         (
-          (produto: object) =>
+          (produto: Produto) =>
           {
             if(produto.id == this.produtoId)
             {
@@ -54,13 +55,15 @@ export class ShowProdutoComponent implements OnInit {
 
       if (event.target.value >= 10)
       {
-        document.getElementById('p-msg').innerHTML= 'Seu desconto aparecerá no checkout'
-        document.getElementById('div-msg').style = "background-color: #7fd45d;"
+        //document.getElementById('p-msg').innerHTML= 'Seu desconto aparecerá no checkout'
+        //document.getElementById('div-msg').style = "background-color: #7fd45d;"
+        document.getElementById('div-msg').innerHTML = '<div style="width: 250px; height: 50px; color: white; position: relative; background-color: #7fd45d;"><p style="position: absolute; left: 10px; bottom: -9px;">Seu desconto aparecerá no checkout</p></div>'
       }
       else
       {
-        document.getElementById('p-msg').innerHTML= 'Aviso: Comprar abaixo de 10 itens não tem desconto'
-        document.getElementById('div-msg').style = "background-color: #db3d3d;"
+        //document.getElementById('p-msg').innerHTML= 'Aviso: Comprar abaixo de 10 itens não tem desconto'
+        //document.getElementById('div-msg').style = "background-color: #db3d3d;"
+        document.getElementById('div-msg').innerHTML = '<div style="width: 250px; height: 50px; color: white; position: relative; background-color: #db3d3d;"><p style="position: absolute; left: 10px; bottom: -9px;">Aviso: Comprar abaixo de 10 itens não tem desconto</p></div>'
       }
     }
     

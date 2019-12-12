@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { of } from 'rxjs'
+import { Produto } from './produto'
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProdutoService {
 
-  produtos: Array<object> = [
+  produtos: Array<Produto> = [
     { id: 1, 
       nome: 'Produto 1', 
       preco: 1000.37,

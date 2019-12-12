@@ -18,9 +18,13 @@
       <input id="xa" class="input-compra" type="number" min="0" max={{selectedProduto.qtdEstoque}} (change)="atualizaPreco($event)">
       <p class="produto-text">Em estoque: {{selectedProduto.qtdEstoque}}</p>
 
+      <div id="div-msg">
+      </div>
+
+      <!--
       <div class="div-msg-geral" id="div-msg">
         <p class="p-geral" id="p-msg"></p>
-      </div>
+      </div>-->
 
       <div id="btn-div"></div>
   </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProdutoService } from 'src/app/services/produto/produto.service';
+import { Produto } from 'src/app/services/produto/produto'
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class ProdutoComponent implements OnInit {
 
-  produtos: Array<object>;
+  produtos: Array<Produto>;
 
   constructor(private produtoService: ProdutoService,
               private router: Router) { }
