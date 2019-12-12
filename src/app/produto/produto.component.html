@@ -1,0 +1,15 @@
+<div class="product-class">
+
+    <p class="title-page">Produtos</p>
+    
+    <div class="cards-produtos" *ngFor="let produto of produtos">
+        <div class="card">
+          <div class="container">
+            <p class="produto-text produto-title">{{produto.nome}}</p>
+            <p class="produto-text">Preço: R$ {{produto.preco}}</p>
+            <button class="btn-mais" (click)="goToDetails(produto)">Ver Mais</button> 
+          </div>
+        </div>
+    </div>
+  
+  </div>

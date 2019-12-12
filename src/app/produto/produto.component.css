@@ -1,0 +1,67 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-class{
+    margin-left: 190px; 
+    font-size: 28px; 
+    padding: 0px 10px;
+}
+
+.title-page{
+    position: relative;
+    top: 3px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.cards-produtos{
+    display: inline-block;
+    position: relative;
+    right: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 320px;
+    height: 125px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.container {
+    padding: 2px 16px;
+}
+
+.produto-text{
+    font-size: 17.5px;
+    position: relative;
+    right: 5px;
+    bottom: 12.5px;
+}
+
+.produto-title{
+    font-weight: 600;
+}
+
+.btn-mais{
+    background-color: #1169f7;
+    border: none;
+    color: white;
+    padding: 6px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    bottom: 16px;
+    left: 218px;
+    border-radius: 4px;
+}

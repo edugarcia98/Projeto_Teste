@@ -1,0 +1,28 @@
+<div class="show-produto">
+  
+  <div class="area-img">
+    <p class="img-txt">Área para imagem</p>
+  </div>
+
+  <div class="produto-dsc">
+    <p class="produto-title">{{selectedProduto.nome}}</p>
+    <p class="produto-text">Código {{selectedProduto.id}}</p>
+    <p class="produto-text" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+       Fusce leo massa, gravida in metus sit amet, varius pharetra enim.</p>
+  </div>
+
+  <div class="comprar-produto">
+      <p class="produto-title">Comprar por {{selectedProduto.preco}}</p>
+      <p class="produto-text" style="font-weight: 750;">Total: R$ {{precoFinal}}</p>
+      <label class="produto-text">Quantidade</label><br>
+      <input id="xa" class="input-compra" type="number" min="0" max={{selectedProduto.qtdEstoque}} (change)="atualizaPreco($event)">
+      <p class="produto-text">Em estoque: {{selectedProduto.qtdEstoque}}</p>
+
+      <div class="div-msg-geral" id="div-msg">
+        <p class="p-geral" id="p-msg"></p>
+      </div>
+
+      <div id="btn-div"></div>
+  </div>
+
+</div>

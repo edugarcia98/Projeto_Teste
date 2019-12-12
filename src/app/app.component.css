@@ -1,0 +1,35 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 190px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #c2c2c2;
+    overflow-x: hidden;
+}
+  
+.sidenav a {
+    font-size: 17.5px;
+    color: black;
+    position: relative;
+    left: 10px;
+    bottom: 15px;
+    text-decoration: none;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.title-sidebar{
+    font-size: 32px;
+    font-weight: 650;
+    position: relative;
+    left: 10px;
+    bottom: 15px;
+}
